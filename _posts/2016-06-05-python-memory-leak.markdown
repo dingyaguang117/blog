@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "记一次Python程序的内存泄露排查"
+title:  "Python程序的内存泄露排查"
 date:   2016-05-05 15:04:02 +0800
 ---
 
