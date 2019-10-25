@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "emoji,unicode,json,python,ucs-4"
-date:   2015-06-10 15:04:02 +0800
+date:   2012-10-19 00:00:00 +0800
 ---
 
 今天有一项工作是将微博文本中的表情 [大笑]之类的替换成emoji表情
