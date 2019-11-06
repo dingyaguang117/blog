@@ -92,7 +92,7 @@ MindHero 插件主要功能包括：
 
 
 Chrome插件与web程序有一些不同的地方，比如:  
-  
+
    1. 插件一般可以离线运行 
    2. 插件（可以）有常驻后台的程序。
 
@@ -105,13 +105,14 @@ Chrome插件与web程序有一些不同的地方，比如:
 
 **2. 数据共享**
 
-  - 后台Runtime的数据很多是需要和页面共享的，比如：当前的番茄工作法状态；当前的背景音乐状态；实时的行为统计数据；用户的自定义设置。这里的数据同步架构如何设计？
-  
+  - 后台Runtime的数据很多是需要和页面共享的，比如：当前的番茄工作法状态；当前的背景音乐状态；实时的行为统计数据；用户的自定义设置。这里的数据同步架构如何设计？我的解决方式是使用共享内存，运行时数据放在background的Runtime里面，在启动插件的时候从本地load，其他页面可以在通过 getBackground().Runtime 引用运行时数据。
+ 
 
 
-2. html-webpack-plugin在多页面中有性能问题，据说在4.0以后修复了，如果无法升级请使用 html-webpack-plugin-for-multihtml
-2. 
+**3. 其他**
 
+  - html-webpack-plugin在多页面中有性能问题，据说在4.0以后修复了，如果无法升级请使用 html-webpack-plugin-for-multihtml
 
+ - 如何同步用户设置？ 如果不自己做后端服务的话，可是使用Chrome提供的 chrome.storage.sync 系列api。这个api提供了自动同步功能，可以在登录了google账号的chrome之间同步数据。
 
-// 其他页面可以在加载时通过 getBackground().Runtime 引用运行时数据
+**to be continued...**
