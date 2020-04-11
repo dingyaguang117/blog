@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Python3 新特性简略"
+title:  "Python2 升级到 Python3 你需要知道的知识"
 date:   2020-01-12 15:04:02 +0800
 
 
