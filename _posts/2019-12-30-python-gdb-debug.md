@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Python Debug with GDB"
-date:   2020-12-30 15:04:02 +0800
+date:   2019-12-30 15:04:02 +0800
 ---
 
 为什么需要使用GDB来调试程序？
