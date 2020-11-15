@@ -11,9 +11,8 @@ title: {{ site.name }}
             <span>{{ post.date | date_to_string }}</span>&raquo; 
             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
             {% if post.category %}
-            <span style="background: #e2e3e4;font-size: 14px;padding: 2px 5px;border-radius: 5px;color: #1f262f;">{{ post.category }}</span>
+            <span class="category-tag">{{ post.category }}</span>
             {% endif %}
-            
         </li>
         {% endfor %}
     </ul>

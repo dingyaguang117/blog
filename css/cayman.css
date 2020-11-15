@@ -193,6 +193,15 @@ a:hover { text-decoration: underline; }
 
 
 /* modified */
+
+.category-tag {
+	background: #f7f7f7;
+	font-size: 14px;
+	padding: 2px 5px;
+	border-radius: 5px;
+	color: #a7a7a7;
+}
+
 .posts {
 	margin: 0; padding: 0;
 }
