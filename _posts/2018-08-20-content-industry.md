@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "[Blockchain Insight] Content Industry"
+title:  "Content Industry"
 date:   2018-08-20 15:04:02 +0800
+category: 区块链
 ---
 
 **Recent Events** 

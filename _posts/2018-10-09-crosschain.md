@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "[Blockchain Insight] Cross-Chain Technology"
+title:  "Cross-Chain Technology"
 date:   2018-10-09 15:04:02 +0800
+category: 区块链
 ---
 
 **What is cross-chain technology?**

@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "[Blockchain Insight] SendFriend and Remittance Market"
+title:  "SendFriend and Remittance Market"
 date:   2019-01-15 15:04:02 +0800
+category: 区块链
 ---
 
 **What’s the event?**

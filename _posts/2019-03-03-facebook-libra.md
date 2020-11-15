@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "[Blockchain Insight] Facebook’s cryptocurrency Libra"
+title:  "Facebook’s cryptocurrency Libra"
 date:   2019-01-15 15:04:02 +0800
+category: 区块链
 ---
 
 
