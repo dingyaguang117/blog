@@ -25,7 +25,7 @@ class Node():
         self.word = None
         Node.static += 1
 
-class AcAutomation():
+class AcAutomaton():
     def __init__(self,KIND=16):
         self.root = Node(KIND)
         self.queue = []
@@ -44,7 +44,7 @@ class AcAutomation():
         p.end = True
         p.word = string
         
-    def build_automation(self):
+    def build_automaton(self):
         self.root.fail = None
         self.queue.append(self.root)
         while len(self.queue)!=0:
@@ -75,12 +75,12 @@ class AcAutomation():
         return False,None
     
 
-class UnicodeAcAutomation():
+class UnicodeAcAutomaton():
     def __init__(self,KIND=16,encoding='utf-8'):
         '''
             KIND must can be 2^i  at most 2^8
         '''
-        self.ac = AcAutomation(KIND)
+        self.ac = AcAutomaton(KIND)
         self.encoding = encoding
         self.KIND = KIND
         self.KNUM = int(math.log(256)/math.log(KIND) + 0.1)
@@ -97,16 +97,16 @@ class UnicodeAcAutomation():
     
     def insert(self,string):
         if type(string) != unicode:
-            raise Exception('UnicodeAcAutomation:: insert type not unicode')
+            raise Exception('UnicodeAcAutomaton:: insert type not unicode')
         ac_string = self.getAcString(string)
         self.ac.insert(ac_string)
 
-    def build_automation(self):
-        self.ac.build_automation()
+    def build_automaton(self):
+        self.ac.build_automaton()
     
     def matchOne(self,string):
         if type(string) != unicode:
-            raise Exception('UnicodeAcAutomation:: insert type not unicode')
+            raise Exception('UnicodeAcAutomaton:: insert type not unicode')
         ac_string = self.getAcString(string)
         retcode,ret = self.ac.matchOne(ac_string)
         if ret!=None:
@@ -123,11 +123,11 @@ class UnicodeAcAutomation():
 
 
 def main():
-    ac = UnicodeAcAutomation()
+    ac = UnicodeAcAutomaton()
     ac.insert(u'丁亚光')
     ac.insert(u'好吃的')
     ac.insert(u'好玩的')
-    ac.build_automation()
+    ac.build_automaton()
     print ac.matchOne(u'hi,丁亚光在干啥')
     print ac.matchOne(u'ab')
     print ac.matchOne(u'不能吃饭啊')
@@ -147,9 +147,9 @@ if __name__ == '__main__':
 
 附项目地址：
 
-- [纯Python版本代码](https://github.com/dingyaguang117/PythonGist/blob/master/UnicodeAcAutomation.py)
+- [纯Python版本代码](https://github.com/dingyaguang117/PythonGist/blob/master/UnicodeAcAutomaton.py)
 
-- [发布到pip的版本](https://github.com/dingyaguang117/ACAutomation)
+- [发布到pip的版本](https://github.com/dingyaguang117/ACAutomaton)
 
-  使用C++实现算法部分 ,效率大幅提升，可以直接使用`pip install ACAutomation`安装
+  使用C++实现算法部分, 效率大幅提升，可以直接使用`pip install ACAutomaton`安装
 
