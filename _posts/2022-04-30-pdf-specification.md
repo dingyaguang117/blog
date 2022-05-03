@@ -50,7 +50,7 @@ Boolean、Integer and real numbers、Strings、Names、Arrays、Dictionaries、S
 
 ### 1.2 表单控件类型
 
-![1](../assets/img/2022-05-01-pdf-2.png)
+![1](/assets/img/2022-05-01-pdf-2.png)
 
 FT 只有 4 种类型： Tx、Btn、Ch、Sig，但是上图中的组件类型有 7 种，为什么不一样多呢？
 
@@ -181,4 +181,4 @@ pdfcpu 作者表示会在下个版本支持表单操作，但是鉴于其半年�
 
 
 #### 3.3 [iText 7 RUPS](https://github.com/itext/i7j-rups/releases)（GUI PDF 文件查看）
-![1](../assets/img/2022-05-01-pdf-1.jpg)
+![1](/assets/img/2022-05-01-pdf-1.jpg)
